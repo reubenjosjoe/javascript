@@ -1,3 +1,25 @@
 .body button{
-  height=100px
+  display: inline-block;
+  font-size: 50px;
+  background-color: chocolate;
+  
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+}
+.body button:hover{
+  opacity: .5;
+}
+.game-area{
+
+  padding-top: 15px;
+  background-color: rgb(2, 30, 30);
+  padding-bottom: 0px;
+}
+.header{
+  padding-top: 0px;
+  background-color: brown;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
