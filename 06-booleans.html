@@ -1,0 +1,97 @@
+<!DOCTYPE html >
+
+<html>
+  
+  <head>
+  <title>Booleans</title>
+  <body class="body">
+    <button  onclick="
+    // the javascript code starts here
+    let N=Math.random();
+    let computerMove='';
+
+    if(N<1/3){
+
+      computerMove='Rock'
+    }
+    else if(N>1/3 && N<2/3){
+      computerMove='Paper'
+    }
+    else if (N>2/3){
+      computerMove='Scissors'
+    }
+    let Result='';
+    if(computerMove==='Rock'){
+      Result='Tie';
+    }
+  else if(computerMove==='Paper'){
+     Result= 'You Lose';
+    }
+    else if(computerMove==='Scissors'){
+      Result='You win';
+    }
+    alert(`you chose rock,Computer chose ${computerMove}, ${Result}`);
+    ">Rock</button>
+    <button onclick="
+    // the javascript code starts here
+     N=Math.random();
+     computerMove='';
+
+    if(N<1/3){
+
+      computerMove='Rock'
+    }
+    else if(N>1/3 && N<2/3){
+      computerMove='Paper'
+    }
+    else if (N>2/3){
+      computerMove='Scissors'
+    }
+     Result='';
+    if(computerMove==='Rock'){
+      Result='You win';
+    }
+  else if(computerMove==='Paper'){
+     Result= 'Tie';
+    }
+    else if(computerMove==='Scissors'){
+      Result='You Lose';
+    }
+    alert(`you chose Paper,Computer chose ${computerMove}, ${Result}`);
+      "
+    >Paper</button>
+    <button onclick="
+    // the javascript code starts here
+     N=Math.random();
+     computerMove='';
+
+    if(N<1/3){
+
+      computerMove='Rock'
+    }
+    else if(N>1/3 && N<2/3){
+      computerMove='Paper'
+    }
+    else if (N>2/3){
+      computerMove='Scissors'
+    }
+     Result='';
+    if(computerMove==='Rock'){
+      Result='You Lose';
+    }
+  else if(computerMove==='Paper'){
+     Result= 'You win';
+    }
+    else if(computerMove==='Scissors'){
+      Result='Tie';
+    }
+    alert(`you chose Scissors,Computer chose ${computerMove}, ${Result}`);
+    ">Scissors</button>
+     <script>
+   
+    </script>
+    
+  
+  </body>
+  </head>
+</html>
