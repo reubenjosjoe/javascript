@@ -12,6 +12,7 @@
     <button onclick="playgame('paper')" >Paper</button>
     <button onclick="playgame('Scissors')">Scissors</button> 
     <button onclick="score.Losses=0;score.Tie=0;score.wins=0;localStorage.removeItem('score')">Reset</button> 
+    <p class="js-scores"> </p>
 
 
 <!-- javascript functionalities -->
@@ -20,11 +21,17 @@
         //   wins:0,Losses:0,Tie:0
         // };
         
+        
         // the line below checks whether the first condition is truthy ..if not it sets the value after the || part
         const score=JSON.parse(localStorage.getItem('score'))||{
           score : {
             wins:0,Losses:0,Tie:0
           }};
+                 document.querySelector('.js-scores')
+          .innerHTML=`wins ${score.wins} Losses${score.Losses} Ties${score.Tie}`;
+                
+          
+         
        
       function playgame(playermove){ 
         computerMove=compChoice();
@@ -80,6 +87,7 @@
                 else if(Result==='Tie'){
                   score.Tie+=1;
                 }
+         
                localStorage.setItem('score',JSON.stringify(score))
                 alert(`You chose ${playermove},Computer chose ${computerMove}, ${Result}
 wins ${score.wins} Losses${score.Losses} Ties${score.Tie}`);
