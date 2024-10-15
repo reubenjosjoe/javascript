@@ -21,6 +21,11 @@
         // };
         
         const score=JSON.parse(localStorage.getItem('score'));
+        if (score=null){
+          score={
+            wins:0,Losses:0,Tie:0
+          };
+        }
       function playgame(playermove){ 
         computerMove=compChoice();
         let Result='';
